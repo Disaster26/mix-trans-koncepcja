@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>MIX-TRANS - bus Piotrków Trybunalski - Srock - Łódź i wynajem busów z kierowcą</title>
+<meta name="description" content="Koncepcja nowej strony MIX-TRANS: linia regularna Piotrków Trybunalski - Srock - Łódź od poniedziałku do piątku oraz przewozy okazjonalne busami z kierowcą.">
+<meta name="theme-color" content="#ffffff">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23223744'/%3E%3Ctext x='33' y='45' font-family='Arial,sans-serif' font-style='italic' font-weight='800' font-size='34' fill='%23D2D3D5' text-anchor='middle'%3EMT%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Exo+2:ital,wght@1,700;1,800&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/hero-900.webp" media="(max-width: 899px)">
+<link rel="preload" as="image" href="img/hero-1800.webp" media="(min-width: 900px)">
+<link rel="stylesheet" href="style.css">
+<style>
+.wylinka-badge{display:inline-flex;align-items:center;gap:.4em;color:inherit;text-decoration:none;font-size:.875em;line-height:1;opacity:.85}
+.wylinka-badge:hover,.wylinka-badge:focus-visible{opacity:1}
+.wylinka-badge:focus-visible{outline:2px solid currentColor;outline-offset:3px;border-radius:2px}
+.wylinka-badge svg{width:18px;height:18px;flex:none;overflow:visible}
+.wylinka-badge b{font-weight:600}
+.wylinka-badge .wy-old{opacity:.45;transform-origin:40px 30px;transition:transform .32s cubic-bezier(.3,.7,.4,1),opacity .32s ease-out}
+.wylinka-badge .wy-pod{opacity:0;transition:opacity .2s ease-out .08s}
+.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:translate(9px,7px) rotate(9deg);opacity:0}
+.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:1}
+@media (prefers-reduced-motion:reduce){.wylinka-badge .wy-old,.wylinka-badge .wy-pod{transition:none}.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:none;opacity:.45}.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:0}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-tel" viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z" fill="currentColor"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M4 7l8 6 8-6" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 22s7-6.6 7-12.2A7 7 0 0 0 5 9.8C5 15.4 12 22 12 22z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="9.8" r="2.6" fill="currentColor"/></symbol>
+    <symbol id="i-strz" viewBox="0 0 24 24"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-lewo" viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-prawo" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-fb" viewBox="0 0 24 24"><path d="M14 8.5V6.8c0-.8.5-1 1-1h2V2.5h-2.8C11.1 2.5 10.5 4.7 10.5 6.3v2.2H8V12h2.5v9.5H14V12h2.7l.4-3.5z" fill="currentColor"/></symbol>
+    <!-- przystanek: odcinek trasy z kropką, pochylony jak kursywa logo -->
+    <symbol id="i-przyst" viewBox="0 0 44 16"><path d="M2 13 L30 3" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><circle cx="36" cy="8" r="5.5" fill="#FFD21F" stroke="#223744" stroke-width="2.5"/></symbol>
+  </defs>
+</svg>
+
+<header class="top" id="top">
+  <div class="wrap top-in">
+    <a class="logo" href="#top" aria-label="MIX-TRANS - strona główna">
+      <span class="logo-tab">MIX-TRANS</span>
+      <span class="logo-opis">usługi przewozowe</span>
+    </a>
+    <nav class="menu" id="menu" aria-label="Menu główne">
+      <a href="#linia">Linia Piotrków - Łódź</a>
+      <a href="#wynajem">Wynajem busa</a>
+      <a href="#flota">Flota</a>
+      <a href="#kontakt">Kontakt</a>
+      <a class="menu-tel" href="tel:+48605943065"><svg><use href="#i-tel"/></svg>605 943 065</a>
+      <a class="menu-tel2" href="tel:+48601130659">lub 601 130 659</a>
+    </nav>
+    <a class="tel-btn" href="tel:+48605943065"><svg><use href="#i-tel"/></svg><span>605 943 065</span></a>
+    <button class="burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+  <section class="hero" aria-labelledby="h1">
+    <div class="hero-foto">
+      <picture>
+        <source media="(min-width: 900px)" srcset="img/hero-1800.webp">
+        <img src="img/hero-900.webp" width="900" height="759" alt="Srebrny bus Mercedes-Benz Sprinter z napisem MIX-TRANS na zaśnieżonej drodze" fetchpriority="high">
+      </picture>
+    </div>
+    <svg class="hero-krawedz" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><path d="M14 0 L0 100" stroke="#FFD21F" stroke-width="7" vector-effect="non-scaling-stroke"/></svg>
+    <div class="hero-txt">
+      <div class="hero-in">
+        <h1 id="h1">Z nami dojedziesz bezpiecznie</h1>
+        <p class="hero-lead">Codzienna linia Piotrków Trybunalski - Srock - Łódź i busy z kierowcą na wesela, koncerty, kolonie i wyjazdy firmowe.</p>
+        <div class="hero-cta">
+          <a class="btn btn-zolty" href="#linia">Rozkład jazdy <svg><use href="#i-strz"/></svg></a>
+          <a class="btn btn-obrys" href="#kontakt">Zapytaj o przejazd</a>
+        </div>
+      </div>
+      <a class="odjazd" href="#linia" aria-label="Najbliższe odjazdy, przejdź do rozkładu">
+        <svg class="odjazd-trasa" viewBox="0 0 320 22" preserveAspectRatio="none" aria-hidden="true">
+          <path d="M8 16 L312 6" stroke="#223744" stroke-width="3" stroke-linecap="round"/>
+          <circle cx="10" cy="15.5" r="5.5" fill="#FFD21F" stroke="#223744" stroke-width="2.5"/>
+          <circle cx="160" cy="11" r="4.5" fill="#fff" stroke="#223744" stroke-width="2.5"/>
+          <circle cx="310" cy="6.5" r="5.5" fill="#FFD21F" stroke="#223744" stroke-width="2.5"/>
+        </svg>
+        <span class="odjazd-st">
+          <span><b>Piotrków Tryb.</b><i id="odjP">12:00</i></span>
+          <span class="odjazd-sr"><b>Srock</b></span>
+          <span><b>Łódź</b><i id="odjL">13:20</i></span>
+        </span>
+        <span class="odjazd-czas" id="odjazdKiedy">Najbliższe odjazdy z obu przystanków</span>
+      </a>
+    </div>
+  </section>
+
+  <section class="sek sek-jasna" id="linia" aria-labelledby="h-linia">
+    <div class="wrap">
+      <div class="sek-glowa">
+        <h2 id="h-linia"><svg class="przyst" aria-hidden="true"><use href="#i-przyst"/></svg>Linia Piotrków Trybunalski - Srock - Łódź</h2>
+        <p>Busy kursują od poniedziałku do piątku, nie kursują w święta. Godziny poniżej to odjazdy z przystanków początkowych.</p>
+      </div>
+
+      <div class="rozk-zakl" role="tablist" aria-label="Wybór rozkładu">
+        <button role="tab" id="t-nowy" aria-selected="true" aria-controls="rozklad" data-rozk="nowy">Od 12.11.2026</button>
+        <button role="tab" id="t-stary" aria-selected="false" aria-controls="rozklad" data-rozk="stary">Do 11.11.2026</button>
+      </div>
+
+      <div class="rozklad" id="rozklad" role="tabpanel">
+        <article class="kier">
+          <header class="kier-glowa">
+            <h3>Z Piotrkowa do Łodzi</h3>
+            <a class="przystanek" href="https://www.google.com/maps/search/?api=1&amp;query=Powiatowe+Centrum+Przesiadkowe+Piotrk%C3%B3w+Trybunalski" target="_blank" rel="noopener"><svg><use href="#i-pin"/></svg>Powiatowe Centrum Przesiadkowe, stanowisko nr 4</a>
+          </header>
+          <ol class="godz" id="godzP" aria-label="Odjazdy z Piotrkowa"></ol>
+        </article>
+        <article class="kier">
+          <header class="kier-glowa">
+            <h3>Z Łodzi do Piotrkowa</h3>
+            <a class="przystanek" href="https://www.google.com/maps/search/?api=1&amp;query=Dworzec+autobusowy+%C5%81%C3%B3d%C5%BA+Fabryczna" target="_blank" rel="noopener"><svg><use href="#i-pin"/></svg>Przystanek WPA Łódź Fabryczna, stanowisko nr 12</a>
+          </header>
+          <ol class="godz" id="godzL" aria-label="Odjazdy z Łodzi"></ol>
+        </article>
+      </div>
+      <p class="legenda"><span class="kurs-s">S</span> <span id="legendaS">kurs Piotrków - Srock</span><span class="leg-sep"></span><span class="kurs-najb"></span> najbliższy odjazd</p>
+
+      <ul class="fakty">
+        <li><b>Od 2010 r.</b><span>w przewozie osób, z siedzibą w Woli Moszczenickiej</span></li>
+        <li><b>Zezwolenie nr 011/205</b><span>na przewozy regularne, Urząd Marszałkowski w Łodzi</span></li>
+        <li><b>Licencja</b><span>na krajowy transport drogowy osób</span></li>
+        <li><b>Pn-pt</b><span>kursy w obu kierunkach od rana do wieczora</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="sek" id="wynajem" aria-labelledby="h-wyn">
+    <div class="wrap wyn">
+      <div class="wyn-foto">
+        <img src="img/flota-para.webp" width="1200" height="657" loading="lazy" alt="Dwa busy Mercedes-Benz Sprinter MIX-TRANS na parkingu">
+      </div>
+      <div class="wyn-txt">
+        <h2 id="h-wyn"><svg class="przyst" aria-hidden="true"><use href="#i-przyst"/></svg>Bus z kierowcą na każdy wyjazd</h2>
+        <p>Wozimy firmy, szkoły, osoby prywatne, biura podróży i grupy zorganizowane. Podaj trasę i termin, resztę bierzemy na siebie.</p>
+        <ol class="trasa-lista">
+          <li>Kolonie i wakacje</li>
+          <li>Wesela</li>
+          <li>Koncerty i imprezy sportowe</li>
+          <li>Przewozy pracownicze</li>
+          <li>Targi i szkolenia</li>
+          <li>Pielgrzymki</li>
+          <li>Inne przewozy okazjonalne, w kraju i za granicą</li>
+        </ol>
+        <div class="cena">
+          <p><b>Jak liczymy cenę?</b> Według przejechanych kilometrów i czasu wynajmu busa. Przy stałej współpracy udzielamy zniżek.</p>
+          <a class="btn btn-gran" href="#kontakt">Zapytaj o wycenę <svg><use href="#i-strz"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sek sek-jasna" id="flota" aria-labelledby="h-flota">
+    <div class="wrap">
+      <div class="sek-glowa sek-glowa-r">
+        <h2 id="h-flota"><svg class="przyst" aria-hidden="true"><use href="#i-przyst"/></svg>Nasze busy w trasie</h2>
+        <div class="gal-strz">
+          <button class="okr" data-gal="-1" aria-label="Poprzednie zdjęcie"><svg><use href="#i-lewo"/></svg></button>
+          <button class="okr" data-gal="1" aria-label="Następne zdjęcie"><svg><use href="#i-prawo"/></svg></button>
+        </div>
+      </div>
+    </div>
+    <div class="gal" id="gal" tabindex="0" aria-label="Zdjęcia busów, przesuń w bok">
+      <figure><img src="img/gory-dom.webp" width="526" height="701" loading="lazy" alt="Bus MIX-TRANS przed drewnianym domem w górach zimą"><figcaption>Wyjazd w góry</figcaption></figure>
+      <figure class="szer"><img src="img/flota-trzy.webp" width="1000" height="750" loading="lazy" alt="Trzy busy MIX-TRANS na postoju"><figcaption>Busy na postoju</figcaption></figure>
+      <figure class="szer"><img src="img/bus-parking.webp" width="1000" height="750" loading="lazy" alt="Biały bus Mercedes-Benz Sprinter zimą"><figcaption>Mercedes-Benz Sprinter</figcaption></figure>
+      <figure class="szer"><img src="img/park.webp" width="1000" height="562" loading="lazy" alt="Bus MIX-TRANS przed budynkiem w parku"><figcaption>Na miejscu na czas</figcaption></figure>
+      <figure class="szer"><img src="img/kostka.webp" width="1000" height="562" loading="lazy" alt="Bus MIX-TRANS na brukowanym podjeździe"><figcaption>Grupy zorganizowane</figcaption></figure>
+      <figure class="szer"><img src="img/gory-droga.webp" width="480" height="360" loading="lazy" alt="Bus MIX-TRANS na górskiej drodze zimą"><figcaption>Zimą też dojedziemy</figcaption></figure>
+    </div>
+  </section>
+
+  <section class="sek" id="kontakt" aria-labelledby="h-kontakt">
+    <div class="wrap kont">
+      <div class="kont-dane">
+        <h2 id="h-kontakt"><svg class="przyst" aria-hidden="true"><use href="#i-przyst"/></svg>Zadzwoń albo napisz</h2>
+        <p>Najszybciej ustalimy przejazd telefonicznie. Zapytanie możesz też zostawić w formularzu.</p>
+        <ul class="kont-lista">
+          <li><svg><use href="#i-tel"/></svg><span><a href="tel:+48605943065">605 943 065</a> lub <a href="tel:+48601130659">601 130 659</a></span></li>
+          <li><svg><use href="#i-mail"/></svg><a href="mailto:mix-trans.kontakt@wp.pl">mix-trans.kontakt@wp.pl</a></li>
+          <li><svg><use href="#i-pin"/></svg><span>ul. Klonowa 5, 97-310 Wola Moszczenicka</span></li>
+          <li><svg><use href="#i-fb"/></svg><a href="https://www.facebook.com/Mixtransport" target="_blank" rel="noopener">facebook.com/Mixtransport</a></li>
+        </ul>
+      </div>
+      <form class="form" id="form" novalidate>
+        <h3>Zapytanie o przejazd</h3>
+        <div class="pola">
+          <label>Skąd<input name="skad" autocomplete="off" placeholder="np. Piotrków Trybunalski"></label>
+          <label>Dokąd<input name="dokad" autocomplete="off" placeholder="np. Zakopane"></label>
+          <label>Data wyjazdu<input name="data" type="date"></label>
+          <label>Liczba osób<input name="osoby" type="number" min="1" inputmode="numeric" placeholder="np. 18"></label>
+          <label class="cale">Telefon lub e-mail<input name="kontakt" autocomplete="off"></label>
+          <label class="cale">Szczegóły (powrót, przystanki, bagaż)<textarea name="opis" rows="3"></textarea></label>
+        </div>
+        <button class="btn btn-zolty" type="submit">Wyślij zapytanie <svg><use href="#i-strz"/></svg></button>
+        <p class="form-info" id="formInfo" hidden>To podgląd strony, formularz zacznie wysyłać zapytania po wdrożeniu.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="stopka">
+  <svg class="stopka-trasa" viewBox="0 0 1200 20" preserveAspectRatio="none" aria-hidden="true"><path d="M0 16 L1200 4" stroke="#FFD21F" stroke-width="2"/></svg>
+  <div class="wrap stopka-in">
+    <div class="st-firma">
+      <span class="logo-tab logo-tab-st">MIX-TRANS</span>
+      <p>Usługi przewozowe Wiesław Skoczylas<br>ul. Klonowa 5, 97-310 Wola Moszczenicka<br>NIP 771-170-35-44</p>
+    </div>
+    <nav class="st-kol" aria-label="Na skróty">
+      <a href="#linia">Rozkład jazdy</a>
+      <a href="#wynajem">Wynajem busa</a>
+      <a href="#flota">Flota</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+    <div class="st-kol">
+      <a href="tel:+48605943065">605 943 065</a>
+      <a href="tel:+48601130659">601 130 659</a>
+      <a href="mailto:mix-trans.kontakt@wp.pl">mix-trans.kontakt@wp.pl</a>
+      <a href="#top">Polityka prywatności</a>
+    </div>
+  </div>
+  <div class="wrap stopka-dol">
+    <span>&copy; <span id="rok">2026</span> MIX-TRANS</span>
+    <a class="wylinka-badge" href="https://wylinka.pl/?utm_source=mix-trans.com.pl&amp;utm_medium=stopka&amp;utm_campaign=wykonanie" rel="noopener" title="Strona wykonana przez Wylinka"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="currentColor"><path d="M9.8 22.8l-1.2-7.9 2.2-3.7 15.5 4.6-.5 1.5-7.2 5.5 4.7 15.6 5-15.6 7 0 4.1 12.7-4.2-.9-2.6 1.8-.8-2.2-5.3 15.6-4.3 0 .4 .2-2.1 2.8-1.3-1.1 1.1-1.4-3.1 .2-.1-1.7 2.2-.1-5.7-16.5-4.8 .6-.8 3.1 0 .5-.3 .5 .8 2.2-1.6 .5-.4-1.3-.8 1.6-1.5-.8 .8-1.6-1.4 .6-.6-1.6 2.3-.8 .2-.4 1.3-4.8 5.9-.8-2.4-6.9zM15.2 13.7l-.1-.4-.4 .8-.1 .8 .1 1 .1 .4 .3 .7 .3-.9 .1-.7 0-.8z"/><path class="wy-pod" d="M37.1 49.8l-4.5-13.3 2.6-1.8 4.2 .9 .9 2.8 3-9.7 0-.5 .1-.8 3.2-8.4 .5-1 .6-1 .9-1.1 1.3-1 1.1-.7 1.4-.5 1.4-.3 .7 0 .9 0 1.2 .3 1.4 .6 .8 .5 .7 .7 .6 .7 .5 .9 .3 .9 .1 .9 0 .8-.2 .9-.5 .9-.5 .6-.7 .5-.7 .3-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.6-.1-.6-.3-.7-.4-.5-.4-.4-.5-.3-.6-.3-.7 0-.7 .1-.6 .1-.5 .4-.5 .5-.3 .5-.2 .7-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1-2.1-2.8 .4-.2z"/><path class="wy-old" d="M40.8 50l.4-.2-4.1 0-4.2-12.5 2.5-1.7 4.3 .9 .6 1.9 .6-1.6 0-.3 2.4-7.8 0-.5 .1-.8 3.2-8.4 .4-.8 .6-.9 .9-1.2 .9-.9 1.3-.8 1.4-.6 1.2-.3 1.4-.1 1.3 .1 .6 .2 .8 .3 1.1 .6 .9 .7 .7 .9 .5 .9 .3 .9 .1 1.1-.1 .9-.3 .9-.4 .7-.6 .7-.6 .4-.6 .2-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.5-.1-.6-.2-.6-.3-.5-.4-.5-.5-.3-.6-.3-.7-.1-.6 0-.6 .1-.6 .3-.6 .5-.3 .4-.2 .5-.1 .5-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1zM49.6 17.1l.6 1.7-1.5 1.9 .4 .4 1.8-2.1-.7-2.1zM48.1 28.3l.5 1.8-1.7 1.8 .4 .4 1.9-2-.6-2.2zM37.9 41.7l1.7-1.5-.4-.4-1.7 1.4zM42.6 38.7l-1.5 2.8 1.1 2-1.3 2.6 .5 .2 1.5-2.8-1.1-2 1.4-2.5z"/></svg><span>wykonanie: <b>Wylinka</b></span></a>
+  </div>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>
